@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div id="menu-logo">
+            <h1>Ik Develers</h1>
+        </div>
+        <ul id="menustart">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i onclick="ToggleMenu()" class="fa-solid fa-bars fa-lg" style="color: rgb(255, 212, 59);"></i>
+        </div>
+    </nav>
+
+    <script>
+        let menustart = document.getElementById("menustart")
+        menustart.style.maxHeight = "0px";
+
+        function ToggleMenu() {
+            if (menustart.style.maxHeight == "0px") {
+                menustart.style.maxHeight = "500px";
+            }
+            else{
+                menustart.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
